@@ -4,7 +4,7 @@ require 'select_connectie.php';
 
 // query om data op te halen
 $sql = "SELECT * FROM producten";
-// ✅ PDO gebruiken
+// PDO gebruiken
 $stmt = $conn->prepare($sql);
 $stmt->execute();
 $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
