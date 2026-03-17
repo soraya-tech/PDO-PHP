@@ -1,0 +1,13 @@
+<?php
+// nieuwe connectie maken met database 
+$host="127.0.0.1:3306";
+$user="root";
+$db="select_db";
+$pass="";
+try{
+    $pdo=new pdo("mysql:host=$host;dbname=$db", $user, $pass);
+    echo "Connected to database ($db)";
+}catch(PDOException $e){
+    echo "Connection failed: " . $e->getMessage();
+}
+?>
