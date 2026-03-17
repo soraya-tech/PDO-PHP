@@ -30,8 +30,7 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 <?php
 //alle rijen uit de database één voor één ophaalt.
-<?php foreach ($result as $row){
-?>
+<?php foreach ($result as $row){?>
 <!--laat gegevens uit de database zien in je HTML tabel.-->
 <tr>
 <td><?php echo $row['id']; ?></td>
